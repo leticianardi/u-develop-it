@@ -10,10 +10,10 @@ app.use(express.json());
 
 
 // BOTTOM FUNCTIONS
-app.get('/', (req, res) => {
- res.json({
-  message: 'hello world'
- });
+
+// Default response for any other request (Not Found)
+app.use((req, res) => {
+ res.status(404).end();
 });
 
 app.listen(PORT, () => {
