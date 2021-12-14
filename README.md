@@ -11,6 +11,7 @@ npm install jest --save-dev
 mysql -u user -p
 ```
 
+
 ## MySql
 
 To check out a database, type one of the following command on the mysql shell:
@@ -28,4 +29,16 @@ To run a database:
 ```
 source db/schema.sql
 source db/seeds.sql
+```
+
+To work on a database:
+```
+USE database_name;
+```
+
+To check content, use the codes below as examples:
+```
+SELECT * FROM voters;
+SELECT first_name, last_name FROM voters;
+SELECT email FROM voters WHERE id = 1;
 ```
