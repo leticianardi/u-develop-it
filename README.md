@@ -23,3 +23,9 @@ To select a database, run the following command:
 ```
 SELECT schema_name
 ```
+
+To run a database:
+```
+source db/schema.sql
+source db/seeds.sql
+```
